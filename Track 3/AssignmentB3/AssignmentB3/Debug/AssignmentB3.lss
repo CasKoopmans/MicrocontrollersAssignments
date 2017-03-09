@@ -1,0 +1,206 @@
+
+AssignmentB3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000148  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000f4  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000148  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000178  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000048  00000000  00000000  000001b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000008bf  00000000  00000000  00000200  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007f2  00000000  00000000  00000abf  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000031f  00000000  00000000  000012b1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000068  00000000  00000000  000015d0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000424  00000000  00000000  00001638  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000003c  00000000  00000000  00001a5c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001a98  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	4b c0       	rjmp	.+150    	; 0xbc <__vector_9>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	2a c0       	rjmp	.+84     	; 0xf0 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+#include <stdlib.h>
+#include <stdio.h>
+
+int main ( void )
+{
+	DDRC = 0b11111111;
+  9e:	8f ef       	ldi	r24, 0xFF	; 255
+  a0:	84 bb       	out	0x14, r24	; 20
+	DDRD = 0b00000000;
+  a2:	11 ba       	out	0x11, r1	; 17
+	timer2initB3();
+  a4:	02 d0       	rcall	.+4      	; 0xaa <timer2initB3>
+	sei();
+  a6:	78 94       	sei
+	while(1)
+	{
+		
+	}
+  a8:	ff cf       	rjmp	.-2      	; 0xa8 <main+0xa>
+
+000000aa <timer2initB3>:
+  #define COMPVALUE2 195
+
+  void timer2initB3()
+  {
+	  //TIMSK |= (1<<TOIE2);
+	  TIMSK |= 0b11111111;
+  aa:	87 b7       	in	r24, 0x37	; 55
+  ac:	8f ef       	ldi	r24, 0xFF	; 255
+  ae:	87 bf       	out	0x37, r24	; 55
+	  TCNT2 = 0;
+  b0:	14 bc       	out	0x24, r1	; 36
+	  OCR2 = COMPVALUE1;
+  b2:	85 e7       	ldi	r24, 0x75	; 117
+  b4:	83 bd       	out	0x23, r24	; 35
+	  TCCR2 = 0b00011101;
+  b6:	8d e1       	ldi	r24, 0x1D	; 29
+  b8:	85 bd       	out	0x25, r24	; 37
+  ba:	08 95       	ret
+
+000000bc <__vector_9>:
+  }
+
+  ISR(TIMER2_COMP_vect)
+  {
+  bc:	1f 92       	push	r1
+  be:	0f 92       	push	r0
+  c0:	0f b6       	in	r0, 0x3f	; 63
+  c2:	0f 92       	push	r0
+  c4:	11 24       	eor	r1, r1
+  c6:	8f 93       	push	r24
+	  if(OCR2 == COMPVALUE1)
+  c8:	83 b5       	in	r24, 0x23	; 35
+  ca:	85 37       	cpi	r24, 0x75	; 117
+  cc:	29 f4       	brne	.+10     	; 0xd8 <__vector_9+0x1c>
+	  {
+		  OCR2 = COMPVALUE2;
+  ce:	83 ec       	ldi	r24, 0xC3	; 195
+  d0:	83 bd       	out	0x23, r24	; 35
+		  PORTC = 0b10000000;
+  d2:	80 e8       	ldi	r24, 0x80	; 128
+  d4:	85 bb       	out	0x15, r24	; 21
+  d6:	06 c0       	rjmp	.+12     	; 0xe4 <__vector_9+0x28>
+	  }
+	  else if(OCR2 == COMPVALUE2)
+  d8:	83 b5       	in	r24, 0x23	; 35
+  da:	83 3c       	cpi	r24, 0xC3	; 195
+  dc:	19 f4       	brne	.+6      	; 0xe4 <__vector_9+0x28>
+	  {
+		  OCR2 = COMPVALUE1;
+  de:	85 e7       	ldi	r24, 0x75	; 117
+  e0:	83 bd       	out	0x23, r24	; 35
+		  PORTC = 0b00000000;
+  e2:	15 ba       	out	0x15, r1	; 21
+	  }
+	  //PORTC = 0b11111111;
+  e4:	8f 91       	pop	r24
+  e6:	0f 90       	pop	r0
+  e8:	0f be       	out	0x3f, r0	; 63
+  ea:	0f 90       	pop	r0
+  ec:	1f 90       	pop	r1
+  ee:	18 95       	reti
+
+000000f0 <_exit>:
+  f0:	f8 94       	cli
+
+000000f2 <__stop_program>:
+  f2:	ff cf       	rjmp	.-2      	; 0xf2 <__stop_program>
