@@ -40,7 +40,7 @@ int main( void )
 		wait(5);
 		memset(tempToDisplay, 0, 15);
 		PORTA = ADCH;
-		wait(2000);
+		wait(1000);
 	}
 }
 

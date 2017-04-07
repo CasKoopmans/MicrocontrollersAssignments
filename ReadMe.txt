@@ -1,5 +1,5 @@
 -------------------------------------------------------------
------------------Microcontroller Assignments-----------------
+----------------Microcontrollers Assignments-----------------
 -------------------------------------------------------------
 
 In this repository, you will find the code that is written to 

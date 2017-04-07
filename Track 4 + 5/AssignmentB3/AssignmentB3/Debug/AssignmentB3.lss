@@ -475,9 +475,9 @@ int main( void )
 		PORTA = ADCH;
  204:	85 b1       	in	r24, 0x05	; 5
  206:	8b bb       	out	0x1b, r24	; 27
-		wait(2000);
- 208:	80 ed       	ldi	r24, 0xD0	; 208
- 20a:	97 e0       	ldi	r25, 0x07	; 7
+		wait(1000);
+ 208:	88 ee       	ldi	r24, 0xE8	; 232
+ 20a:	93 e0       	ldi	r25, 0x03	; 3
  20c:	b0 df       	rcall	.-160    	; 0x16e <wait>
 	}
  20e:	0f 90       	pop	r0
